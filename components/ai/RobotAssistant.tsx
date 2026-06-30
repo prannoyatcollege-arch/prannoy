@@ -258,14 +258,6 @@ function WelcomeView({
   );
 }
 
-const QUICK_QUESTIONS = [
-  "What is the current ML forecast?",
-  "What is the global risk level?",
-  "What is the optimal order quantity?",
-  "What are the top feature importances?",
-  "How calibrated is the model?",
-  "What should I do to reduce risk?",
-];
 
 function ChatView({
   messages, input, setInput, querying, onSend, bottomRef, quickQuestions,
