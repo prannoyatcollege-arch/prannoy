@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { MLProvider } from "@/lib/MLContext";
 
 export const metadata: Metadata = {
-  title: "PRITHVEX",
-  description: "AI Command Center",
+  title: "PRITHVEX – AI Supply Chain Intelligence",
+  description: "AI-powered supply chain forecasting and risk intelligence platform",
 };
 
 export default function RootLayout({
@@ -13,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <MLProvider>{children}</MLProvider>
+      </body>
     </html>
   );
 }
